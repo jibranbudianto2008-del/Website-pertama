@@ -1,0 +1,83 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.foto {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.job {
+    color: gray;
+    font-style: italic;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav {
+    background: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+.container {
+    animation: muncul 1s ease-in;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+button:hover {
+    background: darkblue;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
